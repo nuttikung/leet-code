@@ -1,0 +1,71 @@
+/**
+ * @param {number} n
+ * @param {number[][]} edgeList
+ * @param {number[][]} queries
+ * @return {boolean[]}
+ */
+var distanceLimitedPathsExist = function (n, edgeList, queries) {
+    // The graph
+    const adjacencyList = new Map();
+    // Making a weight
+    const weightList = new Map();
+    // start making graph node
+    for (let i = 0; i < n; i++) {
+        adjacencyList.set(i, [])
+    }
+    // map edge to adjacency
+    edgeList.forEach(([src, dest, weight]) => {
+        adjacencyList.set(src, [...new Set([...adjacencyList.get(src), dest])])
+        adjacencyList.set(dest, [...new Set([...adjacencyList.get(dest), src])])
+        if (weightList.get(`${src}-${dest}`) === undefined) {
+            weightList.set(`${src}-${dest}`, weight)
+        } else {
+            if (weight < weightList.get(`${src}-${dest}`)) {
+                weightList.set(`${src}-${dest}`, weight)
+            }
+        }
+        if (weightList.get(`${dest}-${src}`) === undefined) {
+            weightList.set(`${dest}-${src}`, weight)
+        } else {
+            if (weight < weightList.get(`${dest}-${src}`)) {
+                weightList.set(`${dest}-${src}`, weight)
+            }
+        }
+    })
+    let temp = []
+    const dfs = (src, dest, visited = []) => {
+        visited = [...visited, src]
+        if (src === dest) {
+            temp = [...temp, visited]
+        }
+        if (adjacencyList.get(src).length !== 0 && adjacencyList.get(src).filter(dest => visited.indexOf(dest) === -1).length > 0) {
+            adjacencyList.get(src).filter(dest => visited.indexOf(dest) === -1).map((next) => {
+                dfs(next, dest, visited)
+            })
+        }
+    }
+    // query time
+    // what if for loop to break?
+    return queries.map(([src, dest, limit], index) => {
+        temp = []
+        dfs(src, dest, [])
+        return temp.map((path) => {
+            let isValid = true
+            for (let i = 0; i < path.length - 1; i++) {
+                if (weightList.get(`${path[i]}-${path[i + 1]}`) >= limit) {
+                    isValid = false
+                    break;
+                }
+            }
+            return isValid
+        })
+    }).map((record) => record.some(v => v === true))
+};
+
+let start = Date.now();
+// T1 n = 3, edgeList = [[0,1,2],[1,2,4],[2,0,8],[1,0,16]], queries = [[0,1,2],[0,2,5]]
+console.log(distanceLimitedPathsExist(3, [[0, 1, 2], [1, 2, 4], [2, 0, 8], [1, 0, 16]], [[0, 1, 2], [0, 2, 5]]))
+// T2 n = 5, edgeList = [[0,1,10],[1,2,5],[2,3,9],[3,4,13]], queries = [[0,4,14],[1,4,13]]
+console.log(distanceLimitedPathsExist(5, [[0, 1, 10], [1, 2, 5], [2, 3, 9], [3, 4, 13]], [[0, 4, 14], [1, 4, 13]]))
+let timeTaken = Date.now() - start;
+console.log(`Total time taken : ${timeTaken} milliseconds`);
