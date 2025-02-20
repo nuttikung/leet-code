@@ -1,4 +1,4 @@
-import { RandomizedSet } from "./randomizedSet"
+import { RandomizedSet } from "../randomizedSet"
 
 test("should create a class with a default value as list property as empty Set", () => {
   const randomize = new RandomizedSet()

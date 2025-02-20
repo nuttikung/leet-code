@@ -1,4 +1,4 @@
-import { interpret } from './interpret';
+import { interpret } from "../interpret";
 
 describe('interpret', () => {
 	it.each([

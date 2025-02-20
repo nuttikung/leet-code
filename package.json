@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && node dist/index.js",
+    "start": "pnpm dlx ts-node src/number-of-points.ts",
     "dev": "node --experimental-strip-types",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "lint": "oxlint && eslint"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,9 @@
     "@biomejs/biome": "1.5.3",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.11.0",
+    "eslint-plugin-oxlint": "^0.15.10",
     "jest": "^29.7.0",
+    "oxlint": "^0.15.10",
     "ts-jest": "^29.1.1",
     "typescript": "^5.7.3"
   }

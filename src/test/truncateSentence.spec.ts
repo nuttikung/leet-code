@@ -1,4 +1,4 @@
-import { truncateSentence } from "./truncateSentence";
+import { truncateSentence } from "../truncateSentence";
 
 describe("truncateSentence", () => {
   const sentence = "who is there knock knock ghost is coming";

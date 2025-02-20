@@ -1,4 +1,4 @@
-import { maximum69Number } from "./maximum69Number";
+import { maximum69Number } from "../maximum69Number";
 
 describe("maximum69Number", () => {
 	test.each([

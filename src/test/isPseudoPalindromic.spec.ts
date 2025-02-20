@@ -1,4 +1,4 @@
-import { isPseudoPalindromic } from "./isPseudoPalindromic"
+import { isPseudoPalindromic } from "../isPseudoPalindromic"
 
 describe("isPseudoPalindromic", () => {
   test.each([[[2, 3, 3]], [[2, 3, 1, 1, 2]]])(

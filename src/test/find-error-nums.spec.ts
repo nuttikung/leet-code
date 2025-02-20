@@ -1,4 +1,4 @@
-import { findErrorNums } from "./findErrorNums"
+import { findErrorNums } from "../find-error-nums";
 
 describe("findErrorNums", () => {
   test.each([
@@ -21,8 +21,8 @@ describe("findErrorNums", () => {
   ])(
     "should return [duplicate, missing number] from %p as %p",
     (input, expected) => {
-      const result = findErrorNums(input)
-      expect(result).toMatchObject(expected)
-    }
-  )
-})
+      const result = findErrorNums(input);
+      expect(result).toMatchObject(expected);
+    },
+  );
+});

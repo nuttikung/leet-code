@@ -1,4 +1,4 @@
-import { majorityElement } from './majorityElement';
+import { majorityElement } from "../majorityElement";
 
 describe('majorityElement.ts', () => {
 	it.each([

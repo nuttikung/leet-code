@@ -25,10 +25,13 @@
 // Doing
 // import './firstPalindrome';
 // import "./findWordsContaining";
-import "./intersection";
 
 // Need Optimization
 // import "./sumSubarrayMins"
 
 // A part of function
 // import "./isPseudoPalindromic"
+
+// import './num-tile-possibilities'
+
+import "./number-of-points";

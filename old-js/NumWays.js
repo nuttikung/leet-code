@@ -33,7 +33,7 @@ const wordSearch = (dictionary, search = '', row, column) => {
 }
 
 const wordBuilding = (words, search) => {
-    // COMMENT: making 2d array as dictionary 
+    // COMMENT: making 2d array as dictionary
     let dictionary = []
     // COMMENT: Dictionary in 2D array  <---- Dead here
     words.forEach((word, row) => {
@@ -73,7 +73,7 @@ console.log(numWays(["acca", "bbbb", "caca"], "aba"))
 console.log(numWays(["abba", "baab"], "bab"))
 // T3 word = ["dcdccdabba","ddabcadabc","dbcdbaccba","cddadbdccd","adacdbaadb","cababaccbc","ccbccbaabd","bcdacdadcb","daddbbcaba","abbcaddbab","bbcdabadab","cabababccb","cadddddcba","accaabadbd","baabcabdbc","acbacdbbbc"]
 // console.log(numWays(["dcdccdabba", "ddabcadabc", "dbcdbaccba", "cddadbdccd", "adacdbaadb", "cababaccbc", "ccbccbaabd", "bcdacdadcb", "daddbbcaba", "abbcaddbab", "bbcdabadab", "cabababccb", "cadddddcba", "accaabadbd", "baabcabdbc", "acbacdbbbc"], "dcdaad"))
-// T4 
-// T5 
+// T4
+// T5
 let timeTaken = Date.now() - start;
 console.log(`Total time taken : ${timeTaken} milliseconds`);

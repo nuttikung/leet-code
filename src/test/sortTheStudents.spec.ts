@@ -1,4 +1,4 @@
-import { sortTheStudents } from "./sortTheStudents"
+import { sortTheStudents } from "../sortTheStudents"
 
 describe("sortTheStudents", () => {
   test.each([

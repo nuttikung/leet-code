@@ -1,4 +1,4 @@
-import { firstPalindrome } from './firstPalindrome';
+import { firstPalindrome } from "../firstPalindrome";
 
 describe('firstPalindrome', () => {
 	it.each([

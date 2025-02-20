@@ -1,4 +1,4 @@
-import { getCommon } from "./getCommon";
+import { getCommon } from "../getCommon";
 
 describe("getCommon", () => {
   it("should get a value as minimum value which is intersected between two arrays", () => {

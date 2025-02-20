@@ -1,4 +1,4 @@
-import { numJewelsInStones } from './numJewelsInStones';
+import { numJewelsInStones } from "../numJewelsInStones";
 
 describe('numJewelsInStones', () => {
 	it.each([

@@ -1,4 +1,4 @@
-import { sumSubarrayMins } from "./sumSubarrayMins"
+import { sumSubarrayMins } from "../sumSubarrayMins"
 
 describe("sumSubarrayMins", () => {
   test("should return 0 when empty array provide", () => {

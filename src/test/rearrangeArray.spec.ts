@@ -1,4 +1,4 @@
-import { rearrangeArray } from './rearrangeArray';
+import { rearrangeArray } from "../rearrangeArray";
 
 describe('rearrangeArray', () => {
 	it('should return no sign swap with sign number', () => {

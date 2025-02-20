@@ -1,4 +1,4 @@
-import { findWinners } from "./findWinners"
+import { findWinners } from "../findWinners"
 
 test("Should getting empty winner", () => {
   expect(

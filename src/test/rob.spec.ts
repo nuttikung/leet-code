@@ -1,4 +1,4 @@
-import { rob } from "./rob"
+import { rob } from "../rob"
 
 describe("rob", () => {
   test.each([

@@ -1,4 +1,4 @@
-import { findWordsContaining } from "./findWordsContaining";
+import { findWordsContaining } from "../findWordsContaining";
 
 describe("findWordsContaining", () => {
   it("should return empty when data is not include search text", () => {
