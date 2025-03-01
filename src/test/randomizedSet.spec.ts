@@ -53,5 +53,5 @@ test("should insert 3 values and get random value as a return by one of its", ()
   const expected = new Set().add(1).add(2).add(3)
   expect(randomize.list).toMatchObject(expected)
   const randomNumber = randomize.getRandom()
-  expect(randomNumber).toBe(1 || 2 || 3)
+  expect([1, 2, 3]).toContain(randomNumber);
 })

@@ -1,4 +1,4 @@
-function applyOperations(nums: Array<number>): Array<number> {
+function applyMultiplyValue(nums: Array<number>): Array<number> {
   let answer: Array<number> = [];
   // Apply Multiple operation.
   for (let i = 0; i <= nums.length - 1; i++) {
@@ -10,13 +10,22 @@ function applyOperations(nums: Array<number>): Array<number> {
       answer.push(nums[i]);
     }
   }
-  // Shift 0 to end.
-  const nonZero = answer.filter((value) => value !== 0);
-  const final = new Array(answer.length - nonZero.length).fill(0);
+  return answer;
+}
 
+function shiftZero(nums: Array<number>): Array<number> {
+  // Shift 0 to end.
+  const nonZero = nums.filter((value) => value !== 0);
+  const final = new Array(nums.length - nonZero.length).fill(0);
   return nonZero.concat(final);
 }
 
-console.log(applyOperations([1, 2, 2, 1, 1, 0]));
+function applyOperations(nums: Array<number>): Array<number> {
+  return shiftZero(applyMultiplyValue(nums));
+}
 
-console.log(applyOperations([0, 1]));
+// console.log(applyOperations([1, 2, 2, 1, 1, 0]));
+
+// console.log(applyOperations([0, 1]));
+
+export { applyOperations, applyMultiplyValue, shiftZero };
