@@ -34,4 +34,6 @@
 
 // import './num-tile-possibilities'
 
-import "./number-of-points";
+// import "./number-of-points";
+
+import './apply-operations'
