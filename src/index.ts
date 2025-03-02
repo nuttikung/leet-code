@@ -36,4 +36,5 @@
 
 // import "./number-of-points";
 
-import './apply-operations'
+// import './apply-operations'
+import './merge-arrays'
