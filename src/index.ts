@@ -37,4 +37,6 @@
 // import "./number-of-points";
 
 // import './apply-operations'
-import './merge-arrays'
+// import './merge-arrays'
+
+import './pivot-array'
