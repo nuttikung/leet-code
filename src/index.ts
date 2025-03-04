@@ -40,3 +40,5 @@
 // import './merge-arrays'
 
 import './pivot-array'
+
+import './check-powers-of-three'
