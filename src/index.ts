@@ -38,7 +38,7 @@
 
 // import './apply-operations'
 // import './merge-arrays'
+// import './pivot-array'
+// import './check-powers-of-three'
 
-import './pivot-array'
-
-import './check-powers-of-three'
+import './count-even'
