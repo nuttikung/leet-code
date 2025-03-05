@@ -40,5 +40,5 @@
 // import './merge-arrays'
 // import './pivot-array'
 // import './check-powers-of-three'
-
-import './count-even'
+// import './count-even'
+import './colored-cells'
