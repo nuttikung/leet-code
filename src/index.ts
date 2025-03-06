@@ -41,4 +41,5 @@
 // import './pivot-array'
 // import './check-powers-of-three'
 // import './count-even'
-import './colored-cells'
+// import './colored-cells'
+import './find-missing-and-repeated-values'
