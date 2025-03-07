@@ -42,4 +42,5 @@
 // import './check-powers-of-three'
 // import './count-even'
 // import './colored-cells'
-import './find-missing-and-repeated-values'
+// import './find-missing-and-repeated-values'
+import './closest-primes'
