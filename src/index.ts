@@ -48,4 +48,5 @@
 // import "./number-of-alternating-groups";
 
 // import "./maximum-count";
-import "./maximum-candies"
+// import "./maximum-candies"
+import "./min-capability"
