@@ -49,4 +49,5 @@
 
 // import "./maximum-count";
 // import "./maximum-candies"
-import "./min-capability"
+// import "./min-capability"
+import "./divide-array";
