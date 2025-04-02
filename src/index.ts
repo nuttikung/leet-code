@@ -50,4 +50,5 @@
 // import "./maximum-count";
 // import "./maximum-candies"
 // import "./min-capability"
-import "./divide-array";
+// import "./divide-array";
+import "./maximum-triplet-value";

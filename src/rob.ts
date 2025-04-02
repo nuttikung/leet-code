@@ -1,18 +1,18 @@
 export function rob(nums: number[]): number {
-  const memo = new Map<number, number>()
+  const memo = new Map<number, number>();
   const dp = (n: number): number => {
     if (n === 0) {
-      return nums[0]
+      return nums[0];
     }
     if (n === 1) {
-      return Math.max(...[nums[0], nums[1]])
+      return Math.max(...[nums[0], nums[1]]);
     }
     if (memo.get(n) === undefined) {
-      memo.set(n, Math.max(...[dp(n - 2) + nums[n], dp(n - 1)]))
+      memo.set(n, Math.max(...[dp(n - 2) + nums[n], dp(n - 1)]));
     }
-    return memo.get(n) as number
-  }
-  return dp(nums.length - 1)
+    return memo.get(n) as number;
+  };
+  return dp(nums.length - 1);
 }
 
 // Dynamic Programming
