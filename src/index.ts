@@ -51,4 +51,7 @@
 // import "./maximum-candies"
 // import "./min-capability"
 // import "./divide-array";
-import "./maximum-triplet-value";
+// import "./maximum-triplet-value";
+// import "./subset-xor-sum"
+
+import "./minimum-operations"
