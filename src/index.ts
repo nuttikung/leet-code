@@ -54,4 +54,5 @@
 // import "./maximum-triplet-value";
 // import "./subset-xor-sum"
 
-import "./minimum-operations"
+// import "./minimum-operations"
+import "./count-symmetric-integers"
