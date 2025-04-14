@@ -1,5 +1,3 @@
-import { count } from "node:console";
-
 function isGoodTriplet(
   i: number,
   j: number,
