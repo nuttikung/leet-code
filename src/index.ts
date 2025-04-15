@@ -61,4 +61,5 @@
 // import "./count-good-integers" // -> Heap Algorithm does not help
 
 // import "./count-good-triplets"
-import "./permute"
+// import "./permute"
+import "./score-of-string"
