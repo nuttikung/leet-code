@@ -10,14 +10,14 @@ class EventEmitter {
     if (!(eventName in this.emitter)) {
       this.emitter[eventName] = [];
     }
-    this.emitter[eventName]?.push(callback);
+
+    this.emitter[eventName].push(callback);
+
     return {
       unsubscribe: () => {
         if (!this.emitter[eventName]) return;
-        this.emitter[eventName]?.splice(
-          this.emitter[eventName].indexOf(callback),
-          1,
-        );
+        const temp = this.emitter[eventName].filter((cb) => cb !== callback);
+        this.emitter[eventName] = temp;
       },
     };
   }
@@ -46,6 +46,7 @@ class EventEmitter {
 // const emitter = new EventEmitter();
 // const sub1 = emitter.subscribe("firstEvent", (x) => x + 1);
 // const sub2 = emitter.subscribe("firstEvent", (x) => x + 2);
+// const sub3 = emitter.subscribe("firstEvent", (x) => x + 3);
 // sub1.unsubscribe();
 // console.log(emitter.emit("firstEvent", [5]));
 
