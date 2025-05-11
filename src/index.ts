@@ -63,4 +63,11 @@
 // import "./count-good-triplets"
 // import "./permute"
 // import "./score-of-string"
-import "./event-emitter"
+// import "./event-emitter"
+// import "./count-and-say"
+// import "./count-fair-pairs";
+// import "./count-largest-group";
+
+// import "./min-domino-rotations";
+
+import "./three-consecutive-odds";
