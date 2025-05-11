@@ -25,10 +25,49 @@
 // Doing
 // import './firstPalindrome';
 // import "./findWordsContaining";
-import "./intersection";
 
 // Need Optimization
 // import "./sumSubarrayMins"
 
 // A part of function
 // import "./isPseudoPalindromic"
+
+// import './num-tile-possibilities'
+
+// import "./number-of-points";
+
+// import './apply-operations'
+// import './merge-arrays'
+// import './pivot-array'
+// import './check-powers-of-three'
+// import './count-even'
+// import './colored-cells'
+// import './find-missing-and-repeated-values'
+// import "./closest-primes";
+// import "./minimum-recolors";
+// import "./number-of-alternating-groups";
+
+// import "./maximum-count";
+// import "./maximum-candies"
+// import "./min-capability"
+// import "./divide-array";
+// import "./maximum-triplet-value";
+// import "./subset-xor-sum"
+
+// import "./minimum-operations"
+// import "./count-symmetric-integers"
+
+// Time Limit Exceeded
+// import "./count-good-integers" // -> Heap Algorithm does not help
+
+// import "./count-good-triplets"
+// import "./permute"
+// import "./score-of-string"
+// import "./event-emitter"
+// import "./count-and-say"
+// import "./count-fair-pairs";
+// import "./count-largest-group";
+
+// import "./min-domino-rotations";
+
+import "./three-consecutive-odds";
